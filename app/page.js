@@ -6,8 +6,8 @@ import { useState } from 'react';
 function GameDisplay({json}) {
   console.log(json);
   return (
-    <div class="w-400">
-      <img class="rounded" src="{json.Images[0].Uri}"></img>
+    <div class="max-w-xs bg-green-700">
+      <img class="rounded w-400" src={json.Images[1].Uri}></img>
       <h3 class="text-gray-300">{json.ProductTitle}</h3>
       <h4 class="text-gray-300">{json.DeveloperName}</h4>
       <h4 class="text-gray-300"><i>{json.PublisherName}</i></h4>
